@@ -1,0 +1,39 @@
+{
+	"name": "country",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DataCovid",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "Data on country response measures to COVID-19.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Country",
+				"type": "String"
+			},
+			{
+				"name": "Response_measure",
+				"type": "String"
+			},
+			{
+				"name": "date_start",
+				"type": "String"
+			},
+			{
+				"name": "date_end",
+				"type": "String"
+			}
+		]
+	}
+}
