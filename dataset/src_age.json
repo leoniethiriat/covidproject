@@ -5,6 +5,9 @@
 			"referenceName": "DataCovid",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "source"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
