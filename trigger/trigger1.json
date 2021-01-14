@@ -6,13 +6,19 @@
 		"pipelines": [
 			{
 				"pipelineReference": {
-					"referenceName": "dataingestion",
+					"referenceName": "dataingestion1",
 					"type": "PipelineReference"
 				}
 			},
 			{
 				"pipelineReference": {
-					"referenceName": "dataingestion_copy1",
+					"referenceName": "dataingestion2",
+					"type": "PipelineReference"
+				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "dataingestion",
 					"type": "PipelineReference"
 				}
 			}

@@ -1,0 +1,41 @@
+{
+	"name": "dataingestion",
+	"properties": {
+		"activities": [
+			{
+				"name": "dataingestion1",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "dataingestion1",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "dataingestion2",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "dataingestion1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "dataingestion2",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"annotations": []
+	}
+}
