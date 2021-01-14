@@ -11,14 +11,6 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'DataCovid'"
 		},
-		"DataCovid_properties_typeProperties_host": {
-			"type": "string",
-			"defaultValue": "C:\\Users\\lthiriat\\Documents\\Ecole de la Data\\formation azure"
-		},
-		"DataCovid_properties_typeProperties_userId": {
-			"type": "string",
-			"defaultValue": "BETD\\lthiriat"
-		},
 		"AzureDataLakeStore1_properties_typeProperties_dataLakeStoreUri": {
 			"type": "string",
 			"defaultValue": "https://formationazurelt.azuredatalakestore.net/webhdfs/v1"
@@ -34,6 +26,14 @@
 		"AzureDataLakeStore1_properties_typeProperties_resourceGroupName": {
 			"type": "string",
 			"defaultValue": "rg-BDU_EcoleDeLaData"
+		},
+		"DataCovid_properties_typeProperties_host": {
+			"type": "string",
+			"defaultValue": "C:\\Users\\lthiriat\\Documents\\Ecole de la Data\\formation azure"
+		},
+		"DataCovid_properties_typeProperties_userId": {
+			"type": "string",
+			"defaultValue": "BETD\\lthiriat"
 		},
 		"containerUri": {
 			"type": "string",
@@ -65,12 +65,6 @@
 					"DataCovid_password": {
 						"value": "[parameters('DataCovid_password')]"
 					},
-					"DataCovid_properties_typeProperties_host": {
-						"value": "[parameters('DataCovid_properties_typeProperties_host')]"
-					},
-					"DataCovid_properties_typeProperties_userId": {
-						"value": "[parameters('DataCovid_properties_typeProperties_userId')]"
-					},
 					"AzureDataLakeStore1_properties_typeProperties_dataLakeStoreUri": {
 						"value": "[parameters('AzureDataLakeStore1_properties_typeProperties_dataLakeStoreUri')]"
 					},
@@ -82,6 +76,12 @@
 					},
 					"AzureDataLakeStore1_properties_typeProperties_resourceGroupName": {
 						"value": "[parameters('AzureDataLakeStore1_properties_typeProperties_resourceGroupName')]"
+					},
+					"DataCovid_properties_typeProperties_host": {
+						"value": "[parameters('DataCovid_properties_typeProperties_host')]"
+					},
+					"DataCovid_properties_typeProperties_userId": {
+						"value": "[parameters('DataCovid_properties_typeProperties_userId')]"
 					}
 				}
 			},

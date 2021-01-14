@@ -6,34 +6,6 @@
 			"type": "string",
 			"metadata": "Data Factory name",
 			"defaultValue": "datafactorylt"
-		},
-		"DataCovid_password": {
-			"type": "secureString",
-			"metadata": "Secure string for 'password' of 'DataCovid'"
-		},
-		"AzureDataLakeStore1_properties_typeProperties_dataLakeStoreUri": {
-			"type": "string",
-			"defaultValue": "https://formationazurelt.azuredatalakestore.net/webhdfs/v1"
-		},
-		"AzureDataLakeStore1_properties_typeProperties_tenant": {
-			"type": "string",
-			"defaultValue": "544fe47f-5772-488f-81a9-fa9de607ecfa"
-		},
-		"AzureDataLakeStore1_properties_typeProperties_subscriptionId": {
-			"type": "string",
-			"defaultValue": "32ad602f-d364-45c5-ab7f-b8e199af2da0"
-		},
-		"AzureDataLakeStore1_properties_typeProperties_resourceGroupName": {
-			"type": "string",
-			"defaultValue": "rg-BDU_EcoleDeLaData"
-		},
-		"DataCovid_properties_typeProperties_host": {
-			"type": "string",
-			"defaultValue": "C:\\Users\\lthiriat\\Documents\\Ecole de la Data\\formation azure"
-		},
-		"DataCovid_properties_typeProperties_userId": {
-			"type": "string",
-			"defaultValue": "BETD\\lthiriat"
 		}
 	},
 	"variables": {
@@ -168,15 +140,13 @@
 						"inputs": [
 							{
 								"referenceName": "src_dailysub",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
 							{
 								"referenceName": "dest_dailysub",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						]
 					},
@@ -285,15 +255,13 @@
 						"inputs": [
 							{
 								"referenceName": "src_country",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
 							{
 								"referenceName": "dest_country",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						]
 					},
@@ -450,15 +418,13 @@
 						"inputs": [
 							{
 								"referenceName": "src_age",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
 							{
 								"referenceName": "dest_age",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						]
 					},
@@ -627,15 +593,13 @@
 						"inputs": [
 							{
 								"referenceName": "src_testing",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
 							{
 								"referenceName": "dest_testing",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						]
 					},
@@ -780,15 +744,13 @@
 						"inputs": [
 							{
 								"referenceName": "src_hospital",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
 							{
 								"referenceName": "dest_hospital",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						]
 					}
@@ -834,9 +796,7 @@
 				},
 				"schema": []
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureDataLakeStore1')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/dest_country')]",
@@ -864,9 +824,7 @@
 				},
 				"schema": []
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureDataLakeStore1')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/dest_dailysub')]",
@@ -894,9 +852,7 @@
 				},
 				"schema": []
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureDataLakeStore1')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/dest_hospital')]",
@@ -924,9 +880,7 @@
 				},
 				"schema": []
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureDataLakeStore1')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/dest_testing')]",
@@ -954,9 +908,7 @@
 				},
 				"schema": []
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureDataLakeStore1')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/src_age')]",
@@ -1017,9 +969,7 @@
 					}
 				]
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/DataCovid')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/src_country')]",
@@ -1064,9 +1014,7 @@
 					}
 				]
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/DataCovid')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/src_dailysub')]",
@@ -1119,9 +1067,7 @@
 					}
 				]
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/DataCovid')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/src_hospital')]",
@@ -1178,9 +1124,7 @@
 					}
 				]
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/DataCovid')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/src_testing')]",
@@ -1245,64 +1189,6 @@
 					}
 				]
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/DataCovid')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureDataLakeStore1')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureDataLakeStore",
-				"typeProperties": {
-					"dataLakeStoreUri": "[parameters('AzureDataLakeStore1_properties_typeProperties_dataLakeStoreUri')]",
-					"tenant": "[parameters('AzureDataLakeStore1_properties_typeProperties_tenant')]",
-					"subscriptionId": "[parameters('AzureDataLakeStore1_properties_typeProperties_subscriptionId')]",
-					"resourceGroupName": "[parameters('AzureDataLakeStore1_properties_typeProperties_resourceGroupName')]"
-				},
-				"connectVia": {
-					"referenceName": "integrationRuntime1",
-					"type": "IntegrationRuntimeReference"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/integrationRuntimes/integrationRuntime1')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/DataCovid')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "FileServer",
-				"typeProperties": {
-					"host": "[parameters('DataCovid_properties_typeProperties_host')]",
-					"userId": "[parameters('DataCovid_properties_typeProperties_userId')]",
-					"password": {
-						"type": "SecureString",
-						"value": "[parameters('DataCovid_password')]"
-					}
-				},
-				"connectVia": {
-					"referenceName": "integrationRuntime1",
-					"type": "IntegrationRuntimeReference"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/integrationRuntimes/integrationRuntime1')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/integrationRuntime1')]",
-			"type": "Microsoft.DataFactory/factories/integrationRuntimes",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"type": "SelfHosted",
-				"typeProperties": {}
-			},
 			"dependsOn": []
 		},
 		{
@@ -1317,8 +1203,7 @@
 						"pipelineReference": {
 							"referenceName": "dataingestion",
 							"type": "PipelineReference"
-						},
-						"parameters": {}
+						}
 					}
 				],
 				"type": "ScheduleTrigger",
@@ -1328,8 +1213,7 @@
 						"interval": 1,
 						"startTime": "2021-01-14T14:43:00",
 						"endTime": "2021-01-15T20:00:00",
-						"timeZone": "Romance Standard Time",
-						"schedule": {}
+						"timeZone": "Romance Standard Time"
 					}
 				}
 			},

@@ -8,12 +8,6 @@
 		"DataCovid_password": {
 			"value": ""
 		},
-		"DataCovid_properties_typeProperties_host": {
-			"value": "C:\\Users\\lthiriat\\Documents\\Ecole de la Data\\formation azure"
-		},
-		"DataCovid_properties_typeProperties_userId": {
-			"value": "BETD\\lthiriat"
-		},
 		"AzureDataLakeStore1_properties_typeProperties_dataLakeStoreUri": {
 			"value": "https://formationazurelt.azuredatalakestore.net/webhdfs/v1"
 		},
@@ -25,6 +19,12 @@
 		},
 		"AzureDataLakeStore1_properties_typeProperties_resourceGroupName": {
 			"value": "rg-BDU_EcoleDeLaData"
+		},
+		"DataCovid_properties_typeProperties_host": {
+			"value": "C:\\Users\\lthiriat\\Documents\\Ecole de la Data\\formation azure"
+		},
+		"DataCovid_properties_typeProperties_userId": {
+			"value": "BETD\\lthiriat"
 		},
 		"containerUri": {
 			"value": ""
