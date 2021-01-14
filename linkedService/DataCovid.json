@@ -1,0 +1,17 @@
+{
+	"name": "DataCovid",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "C:\\Users\\lthiriat\\Documents\\Ecole de la Data\\formation azure",
+			"userId": "BETD\\lthiriat",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIxMWJhNmI5NC1lMTFhLTRkYmEtOGFkNS0yOWIzZTg2MjBjMjciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
