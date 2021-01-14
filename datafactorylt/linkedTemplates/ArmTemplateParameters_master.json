@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "datafactorylt"
+		},
+		"DataCovid_password": {
+			"value": ""
+		},
+		"DataCovid_properties_typeProperties_host": {
+			"value": "C:\\Users\\lthiriat\\Documents\\Ecole de la Data\\formation azure"
+		},
+		"DataCovid_properties_typeProperties_userId": {
+			"value": "BETD\\lthiriat"
+		},
+		"AzureDataLakeStore1_properties_typeProperties_dataLakeStoreUri": {
+			"value": "https://formationazurelt.azuredatalakestore.net/webhdfs/v1"
+		},
+		"AzureDataLakeStore1_properties_typeProperties_tenant": {
+			"value": "544fe47f-5772-488f-81a9-fa9de607ecfa"
+		},
+		"AzureDataLakeStore1_properties_typeProperties_subscriptionId": {
+			"value": "32ad602f-d364-45c5-ab7f-b8e199af2da0"
+		},
+		"AzureDataLakeStore1_properties_typeProperties_resourceGroupName": {
+			"value": "rg-BDU_EcoleDeLaData"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
