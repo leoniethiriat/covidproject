@@ -13,10 +13,11 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureDataLakeStoreLocation",
-				"folderPath": "rowdata"
+				"folderPath": "rowdata/europe"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
+			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
 		"schema": []
