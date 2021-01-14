@@ -1,5 +1,5 @@
 {
-	"name": "country",
+	"name": "src_country",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "DataCovid",
