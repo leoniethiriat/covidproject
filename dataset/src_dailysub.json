@@ -1,0 +1,47 @@
+{
+	"name": "src_dailysub",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DataCovid",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "Data on the daily subnational 14-day notification rate of new COVID-19 cases.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "country",
+				"type": "String"
+			},
+			{
+				"name": "region_name",
+				"type": "String"
+			},
+			{
+				"name": "nuts_code",
+				"type": "String"
+			},
+			{
+				"name": "date",
+				"type": "String"
+			},
+			{
+				"name": "rate_14_day_per_100k",
+				"type": "String"
+			},
+			{
+				"name": "source",
+				"type": "String"
+			}
+		]
+	}
+}
